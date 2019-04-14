@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 const logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 logo.alt = "Great Idea! Company logo.";
 console.log(logo);
 
@@ -51,17 +51,20 @@ home.style.width = "800px";
 home.style.margin = "0 auto";
 
 
-const head = document.getSelectorAll("header");
-headerNav.style.flexDirection = row;
-headerNav.style.justifyContent = "space-between";
+const header = document.getSelectorAll("header");
+header.style.flexFlow = "row nowrap";
+header.style.justifyContent = "space-between";
 
 
 const headerNav = document.querySelector("nav");
+headerNav.style.marginTop = "35px";
 
 
 
 const navLinks = document.querySelectorAll("a");
 navLinks.forEach( function( x ) {
+  x.style.fontSize = "18px";
+  x.style.marginLeft = "20px";
   x.style.color = "gray";
   x.style.textDecoration = "none";
 });
