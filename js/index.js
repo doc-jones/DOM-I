@@ -45,8 +45,17 @@ logo.alt = "Great Idea! Company logo.";
 // const logo = document.querySelector("logo-img");
 // logo.src="img/logo.png";
 
-const navi = document.querySelectorAll("nav");
-console.log(navi);
+const contain = document.getElementsByClassName(".container");
+
+const head = document.getSelectorAll("header");
+
+const headerNav = document.querySelector("nav");
+
+
+const navLinks = document.querySelectorAll("a");
+navLinks.forEach( function(currentValue) {
+  currentValue.style.color = "gray";
+});
 
 const callToAction = document.querySelector("cta");
 
@@ -56,6 +65,6 @@ ctaImg.alt = "Image of a code snippet.";
 
 const main = document.querySelector("main-content");
 
-const sectionHL = document.querySelect("*h4");
+const sectionHL = document.querySelectAll("h4");
 
-const textContent = document.querySelectorAll("*content");
+const textContent = document.querySelectorAll("content");
