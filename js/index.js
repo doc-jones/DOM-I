@@ -41,34 +41,40 @@ const siteContent = {
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 logo.alt = "Great Idea! Company logo.";
+console.log(logo);
 
 // const logo = document.querySelector("logo-img");
 // logo.src="img/logo.png";
 
-const contain = document.getElementsByClassName(".container");
+const home = document.getElementsByClassName(".container");
+home.style.width = "800px";
+home.style.margin = "0 auto";
+
 
 const head = document.getSelectorAll("header");
+headerNav.style.flexDirection = row;
+headerNav.style.justifyContent = "space-between";
 
 
 const headerNav = document.querySelector("nav");
-headerNav.style.flexWrap = wrap;
-headerNav.style.justifyContent = "space-between";
 
 
 
 const navLinks = document.querySelectorAll("a");
-navLinks.forEach( function(currentValue) {
-  currentValue.style.color = "gray";
+navLinks.forEach( function( x ) {
+  x.style.color = "gray";
+  x.style.textDecoration = "none";
 });
 
 const callToAction = document.querySelector("cta");
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img/header-img.png"])
-ctaImg.alt = "Image of a code snippet.";
+ctaImg.alt = "It's already present, but I'm practicing sooooo: Image of a code snippet.";
 
 const midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["img/mid-page-accent.jpg"]);
+midImg.alt = "I wanted to change this for practice. And: Image of code snippets across the screen";
 
 const main = document.querySelector("main-content");
 
