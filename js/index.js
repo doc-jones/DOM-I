@@ -41,5 +41,16 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// const logo = document.querySelector("logo-img");
+// logo.src="img/logo.png";
 
-// comment to generate commit
+const navi = document.querySelectorAll("nav");
+console.log(navi);
+
+const callToAction = document.querySelector("cta");
+
+const main = document.querySelector("main-content");
+
+const sectionHL = document.querySelectAll("*h4");
+
+const textContent = document.querySelectorAll("*content");
