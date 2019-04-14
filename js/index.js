@@ -44,14 +44,12 @@ logo.alt = "Great Idea! Company logo.";
 console.log(logo);
 
 
-// const home = document.getElementsByClassName("container");
-// home.style.width = "800px";
-// home.style.margin = "0 auto";
+// const header = document.createElement("header");
+// document.body.appendChild(header);
 
-
-const header = document.querySelector("header");
-header.style.flexFlow = "row nowrap";
-header.style.justifyContent = "space-between";
+// const header = document.querySelector("nav");
+// header.style.flexFlow = "row nowrap";
+// header.style.justifyContent = "space-between";
 
 
 const headerNav = document.querySelector("nav");
@@ -66,10 +64,16 @@ navLinks.forEach( function( x ) {
   x.style.color = "gray";
   x.style.textDecoration = "none";
 });
+console.log(navLinks);
 
-const callToAction = document.querySelector("cta");
 
-let ctaImg = document.getElementById("cta-img");
+const header = document.querySelector(".cta");
+header.style.flexFlow = "row nowrap";
+header.style.justifyContent = "space-between";
+
+// const callToAction = document.querySelectorAll(".cta");
+
+const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 ctaImg.alt = "It's already present, but I'm practicing sooooo: Image of a code snippet.";
 
