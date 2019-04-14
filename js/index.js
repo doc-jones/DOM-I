@@ -43,15 +43,13 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 logo.alt = "Great Idea! Company logo.";
 console.log(logo);
 
-// const logo = document.querySelector("logo-img");
-// logo.src="img/logo.png";
 
-const home = document.getElementsByClassName(".container");
-home.style.width = "800px";
-home.style.margin = "0 auto";
+// const home = document.getElementsByClassName("container");
+// home.style.width = "800px";
+// home.style.margin = "0 auto";
 
 
-const header = document.getSelectorAll("header");
+const header = document.querySelector("header");
 header.style.flexFlow = "row nowrap";
 header.style.justifyContent = "space-between";
 
@@ -72,11 +70,11 @@ navLinks.forEach( function( x ) {
 const callToAction = document.querySelector("cta");
 
 let ctaImg = document.getElementById("cta-img");
-ctaImg.setAttribute('src', siteContent["cta"]["img/header-img.png"])
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 ctaImg.alt = "It's already present, but I'm practicing sooooo: Image of a code snippet.";
 
 const midImg = document.getElementById("middle-img");
-midImg.setAttribute('src', siteContent["main-content"]["img/mid-page-accent.jpg"]);
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 midImg.alt = "I wanted to change this for practice. And: Image of code snippets across the screen";
 
 const main = document.querySelector("main-content");
