@@ -38,7 +38,7 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 logo.alt = "Great Idea! Company logo.";
 
@@ -49,7 +49,11 @@ const contain = document.getElementsByClassName(".container");
 
 const head = document.getSelectorAll("header");
 
+
 const headerNav = document.querySelector("nav");
+headerNav.style.flexWrap = wrap;
+headerNav.style.justifyContent = "space-between";
+
 
 
 const navLinks = document.querySelectorAll("a");
@@ -62,6 +66,9 @@ const callToAction = document.querySelector("cta");
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img/header-img.png"])
 ctaImg.alt = "Image of a code snippet.";
+
+const midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["img/mid-page-accent.jpg"]);
 
 const main = document.querySelector("main-content");
 
