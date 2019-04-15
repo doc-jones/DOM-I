@@ -44,12 +44,10 @@ logo.alt = "Great Idea! Company logo.";
 console.log(logo);
 
 
-const headerNav = document.querySelector("nav");
-headerNav.setAttribute("contentText", siteContent["nav"]["nav-item-1"])
-let links = headerNav.children;
-console.log(headerNav);
+const navItems = document.querySelector("nav:firstChild");
+let link = navItems.children[0];
 
-headerNav.style.marginTop = "35px";
+navItems.style.marginTop = "35px";
 
 
 
@@ -68,14 +66,14 @@ const header = document.querySelector(".cta");
 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
-ctaImg.alt = "It's already present, but I'm practicing sooooo: Image of a code snippet.";
+ctaImg.alt = "Image of a code snippet.";
 
 const midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
-midImg.alt = "I wanted to change this for practice. And: Image of code snippets across the screen";
+midImg.alt = "Image of code snippets across the screen";
 
 const main = document.querySelector("main-content");
 
 const sectionHL = document.querySelectorAll("h4");
 
-const textContent = document.querySelectorAll("content");
+const text = document.querySelectorAll("content");
