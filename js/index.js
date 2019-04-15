@@ -44,34 +44,27 @@ logo.alt = "Great Idea! Company logo.";
 console.log(logo);
 
 
-// const header = document.createElement("header");
-// document.body.appendChild(header);
-
-// const header = document.querySelector("nav");
-// header.style.flexFlow = "row nowrap";
-// header.style.justifyContent = "space-between";
-
-
 const headerNav = document.querySelector("nav");
+headerNav.setAttribute("contentText", siteContent["nav"]["nav-item-1"])
+let links = headerNav.children;
+console.log(headerNav);
+
 headerNav.style.marginTop = "35px";
 
 
 
-const navLinks = document.querySelectorAll("a");
-navLinks.forEach( function( x ) {
-  x.style.fontSize = "18px";
-  x.style.marginLeft = "20px";
-  x.style.color = "gray";
-  x.style.textDecoration = "none";
-});
-console.log(navLinks);
+// const navLinks = document.querySelector(siteContent['nav-item']);
+// navLinks.forEach( function( x ) {
+//   x.style.fontSize = "18px";
+//   x.style.marginLeft = "20px";
+//   x.style.color = "gray";
+//   x.style.textDecoration = "none";
+// });
+// console.log(navLinks);
 
 
 const header = document.querySelector(".cta");
-header.style.flexFlow = "row nowrap";
-header.style.justifyContent = "space-between";
 
-// const callToAction = document.querySelectorAll(".cta");
 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
@@ -83,6 +76,6 @@ midImg.alt = "I wanted to change this for practice. And: Image of code snippets 
 
 const main = document.querySelector("main-content");
 
-const sectionHL = document.querySelectAll("h4");
+const sectionHL = document.querySelectorAll("h4");
 
 const textContent = document.querySelectorAll("content");
