@@ -58,6 +58,10 @@ const headLine = document.querySelector(".cta-text h1");
 headLine.textContent = siteContent['cta']["h1"];
 // console.log(headLine);
 
+const btn = document.querySelector(".cta button");
+btn.textContent = siteContent['cta']["button"];
+console.log(btn);
+
 const subHeads = document.querySelectorAll('.main-content h4');
 // console.log(subHeads);
 subHeads[0].textContent = siteContent['main-content']['features-h4'];
