@@ -44,10 +44,28 @@ logo.alt = "Great Idea! Company logo.";
 console.log(logo);
 
 
-const navItems = document.querySelector("nav:firstChild");
-let link = navItems.children[0];
+// navItems.style.marginTop = "35px";
 
-navItems.style.marginTop = "35px";
+
+const navList = document.querySelectorAll("header nav a");
+navList.forEach((item, index) => {
+  item.textContent = siteContent['nav'][`nav-item-${1 + index}`]
+})
+
+
+
+const headLine = document.querySelector(".cta-text h1");
+headLine.textContent = siteContent['cta']["h1"];
+// console.log(headLine);
+
+const subHeads = document.querySelectorAll('.main-content h4');
+// console.log(subHeads);
+subHeads[0].textContent = siteContent['main-content']['features-h4'];
+subHeads[1].textContent = siteContent['main-content']['about-h4'];
+subHeads[2].textContent = siteContent['main-content']['services-h4'];
+subHeads[3].textContent = siteContent['main-content']['product-h4'];
+subHeads[4].textContent = siteContent['main-content']['vision-h4']
+
 
 
 
@@ -60,8 +78,6 @@ navItems.style.marginTop = "35px";
 // });
 // console.log(navLinks);
 
-
-const header = document.querySelector(".cta");
 
 
 const ctaImg = document.getElementById("cta-img");
