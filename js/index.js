@@ -97,4 +97,5 @@ contactList[1].textContent = siteContent["contact"]["phone"];
 contactList[2].textContent = siteContent["contact"]["email"];
 
 const footer = document.querySelector("footer p");
+console.log(footer);
   footer.textContent = siteContent["footer"]["copyright"];
