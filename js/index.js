@@ -60,7 +60,7 @@ headLine.textContent = siteContent['cta']["h1"];
 
 const btn = document.querySelector(".cta button");
 btn.textContent = siteContent['cta']["button"];
-console.log(btn);
+// console.log(btn);
 
 const subHeads = document.querySelectorAll('.main-content h4');
 // console.log(subHeads);
@@ -70,19 +70,9 @@ subHeads[2].textContent = siteContent['main-content']['services-h4'];
 subHeads[3].textContent = siteContent['main-content']['product-h4'];
 subHeads[4].textContent = siteContent['main-content']['vision-h4']
 
-
-
-
-// const navLinks = document.querySelector(siteContent['nav-item']);
-// navLinks.forEach( function( x ) {
-//   x.style.fontSize = "18px";
-//   x.style.marginLeft = "20px";
-//   x.style.color = "gray";
-//   x.style.textDecoration = "none";
-// });
-// console.log(navLinks);
-
-
+const topContent = document.querySelectorAll(".top-content .text-content p");
+  topContent[0].textContent = siteContent["main-content"]["features-content"];
+  topContent[1].textContent = siteContent["main-content"]["about-content"];
 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
@@ -92,8 +82,19 @@ const midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 midImg.alt = "Image of code snippets across the screen";
 
-const main = document.querySelector("main-content");
+const bottomContent = document.querySelectorAll(".bottom-content .text-content p");
+  bottomContent[0].textContent = siteContent["main-content"]["services-content"];
+  bottomContent[1].textContent = siteContent["main-content"]["product-content"];
+  bottomContent[2].textContent = siteContent["main-content"]["vision-content"];
 
-const sectionHL = document.querySelectorAll("h4");
+const contactHeading = document.querySelector(".contact h4");
+contactHeading.textContent = siteContent['contact']["contact-h4"];
 
-const text = document.querySelectorAll("content");
+const contactList = document.querySelectorAll(".contact p");
+// console.log(contactList)
+contactList[0].textContent = siteContent["contact"]["address"];
+contactList[1].textContent = siteContent["contact"]["phone"];
+contactList[2].textContent = siteContent["contact"]["email"];
+
+const footer = document.querySelector("footer p");
+  footer.textContent = siteContent["footer"]["copyright"];
